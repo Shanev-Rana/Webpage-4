@@ -12,6 +12,10 @@ body{
   background: #e6ccff;
 }
 
+h1 {
+  font-family: DancingScript;
+}
+
 #container{
 postion: relative;
 top: 100px;
