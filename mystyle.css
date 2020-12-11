@@ -1,15 +1,55 @@
 /*FONTS *************************************/
 
-@@font-face {
+@font-face {
   font-family: DancingScript;
   src: url(Fonts/static/DancingScript-Bold.ttf);
 }
 
+@font-face{
+  font-family: DancingScript;
+  src: url(Fonts/static/DancingScript-Bold.tff);
+}
+
+#slider {
+  overflow: hidden;
+  }
+  #slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+
+  }
+  #slider figure img {
+    width: 300px;
+    float: center;
+  }
+  #slider figure img {
+    width: 300px;
+    float: center;
+  }
+  #slider figure img{
+    width: 300px;
+    float: center;
+}
+
+@keyframes slider {
+  0% {
+      left: 0;
+  }
+  20% {
+      left: 0;
+  }
+  25% {
+      left: -100%;
+  }
+}
 
 body{
   display: flex;
   justify-content: center;
-  background: #e6ccff;
+  background:#e6ccff;
 }
 
 h1 {
@@ -17,33 +57,49 @@ h1 {
 }
 
 #container{
-postion: relative;
+position: relative;
 top: 100px;
 width: 300px;
 
+}
+#hero-image {
+  display: flex;
+  justify-content: center;
+}
+
+#hero-image img {
+  width: 300px;
+  height: 300px;
 }
 
 #content-box{
   background: #FFF;
   padding: 15px;
   margin-bottom: 15px;
+  box-shadow: 6px 6px 3px rgba(0,0,0,.05);
 }
 
 ul {
+  position: relative;
+  margin: 25px;
   list-style-type: none;
   padding: 0px;
   display:flex;
-  justify-content: left;
+  justify-content: center;
+}
+
+li{
+  margin: 10px;
 }
 
 a {
   position: relative;
-  margin-bottom: 15px
+  margin-bottom: 15px;
   text-decoration: none;
-  background: #FFF;
-  padding: 15px;
+  padding: 5px;
+  color: #8585ad;
 }
 
 a:hover{
-  background: #ffcccc;
+  background: #d1d1e0;
 }
